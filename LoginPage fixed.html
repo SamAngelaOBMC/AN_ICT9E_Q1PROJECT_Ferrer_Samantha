@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Div Page Sample</title>
+<style>
+	html, body{
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		font-family: garamond;
+	}
+
+	.head{
+		display: inline-block;
+		text-decoration: none;
+	}
+	.upper{
+		display: inline-block;
+	}
+	.bags{
+		list-style-type: none;
+		display: inline-block;
+		margin: 0;
+		float: left;
+		display: flex;
+	}
+	h1{
+		text-align: center;
+		font-family: "trebuchet ms";
+	}
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: black;
+		padding: 10px 20px;
+	}
+	header h1 {
+		color: white;
+		margin: 0;
+		font-family: garamond;
+	}
+	nav a {
+		color: white;
+		text-decoration: none;
+		margin-left: 20px;
+	}
+	nav a:hover {
+		text-decoration: underline;
+		color: gray;
+	}
+
+	.main-content{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh; /* Ensures full height of the viewport */
+		background-color: gray;
+	}
+
+	.form-section {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 1000px; /* Increased width */
+    padding: 100px; /* Increased padding for a bigger background */
+    text-align: center;
+	}
+
+	.form-section input,
+	.form-section textarea {
+	    width: 80%; /* Adjust width for form fields to fit larger background */
+	}
+
+	.form-section label,
+	.form-section input,
+	.form-section textarea {
+		display: block;
+		margin: 0 auto 20px auto; /* Centers the labels and inputs */
+	}
+
+	.form-section input,
+	.form-section textarea {
+		width: 70%; /* Adjust the width of inputs */
+	}
+
+	.form-section input[type="submit"] {
+		width: auto; /* Adjust the submit button width */
+		padding: 10px 20px;
+		background-color: lightblue;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+
+	.form-section input[type="submit"]:hover {
+		background-color: deepskyblue;
+	}
+</style>
+</head>
+
+<body>
+
+<div>
+    <div>
+        <h1>CHANEL</h1>
+    </div>
+
+    <header>
+        <a href="AN_ICT9E_Q1Project_Ferrer_Samantha.html" target="_self">
+            <img src="chanel_logo_white-removebg-preview.png" height="95px"> 
+        </a>
+        <h1 style="background-color: black;">ACCOUNT | LOG IN</h1>
+        <nav>
+            <a href="LoginPage.html">Log In</a>
+            <a href="SignUpPage.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="form-section">
+            <form>
+                <label for="text">Name:</label>
+                <input type="text" id="text" name="text" cols="50" placeholder="Start Typing Here...">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" cols="50" placeholder="@gmail.com/@obmontessori.edu.ph">
+
+                <label>Address:</label>
+                <textarea id="textarea" name="textarea" rows="4" cols="50" placeholder="Start Typing Here....."></textarea>
+
+                <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
